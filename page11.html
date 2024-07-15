@@ -1,72 +1,451 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  <!-- Site made with Mobirise Website Builder v5.9.18, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.18, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/download-9-96x96.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>donate</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=zJxv5t"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=zJxv5t" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <!-- Add Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', 'Roboto';
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
-  
-  
-  
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .total-donation {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .total-donation label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        .total-donation input[type="number"] {
+            width: calc(50% - 10px);
+            padding: 8px;
+            margin-right: 10px;
+            border: 3px solid #000000;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .category h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .cause {
+            margin-bottom: 10px;
+        }
+
+        .cause label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .cause input[type="number"] {
+            width: calc(50% - 10px);
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .donate-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .donate-button:hover {
+            background-color: #b51717;
+        }
+
+        .step {
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .next-button, .prev-button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .prev-button {
+            background-color: #FF0000;
+        }
+
+        .summary {
+            white-space: pre-wrap;
+            background: FF0000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+    
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-container img {
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="menu menu6 cid-uis88wkumF" once="menu" id="menu06-4k">
-	
+    <div class="container">
+        <div class="logo-container">
+            <a href="http:solaceglobal.xyz">
+                <img src="https://via.placeholder.com/150" alt="Logo" />
+            </a>
+        </div>
 
-	<nav class="navbar navbar-dropdown opacityScrollOff navbar-fixed-top navbar-expand-lg">
-		<div class="container">
-			<div class="navbar-brand">
-				<span class="navbar-logo">
-					<a href="index.html">
-						<img src="assets/images/download-9-96x96.png" alt="" style="height: 8.9rem;">
-					</a>
-				</span>
-				
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</button>
-			<div class="collapse navbar-collapse opacityScrollOff" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-white text-primary display-4" href="page4.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-white text-primary display-4" href="page7.html" aria-expanded="false">Partners</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-white text-primary display-4" href="page5.html">Sponsors</a>
-					</li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="page3.html">Contact Us</a></li></ul>
-				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="page2.html">Donate</a></div>
-			</div>
-		</div>
-	</nav>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3311015" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-maker.html">AI Website Maker</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
-  <input name="animation" type="hidden">
-  </body>
+        <h1>Donate to Your Preferred Causes</h1>
+        <div class="total-donation">
+            <label for="totalDonation">Total Donation Amount:</label>
+            <input type="number" id="totalDonation" placeholder="Enter total amount" step="0.01">
+        </div>
+        <form id="donationForm">
+            <div class="step active">
+                <h2>Select Categories</h2>
+                <div>
+                    <input type="checkbox" id="checkbox-medical" checked>
+                    <label for="checkbox-medical">Medical Causes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox-globalconflict" checked>
+                    <label for="checkbox-globalconflict">Global Conflict Causes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox-learning" checked>
+                    <label for="checkbox-learning">Learning Causes</label>
+                </div>
+                <button type="button" class="next-button" onclick="if(validateStep()) nextStep()">Next</button>
+            </div>
+            <div class="step">
+                <div class="category medical">
+                    <h2>Medical Causes</h2>
+                    <div class="cause">
+                        <label for="medicalPercentage">Cancer:</label>
+                        <input type="number" id="medicalPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="medicalMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="medicalPercentage">Malaria:</label>
+                        <input type="number" id="medicalPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="medicalMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="breastCancerPercentage">Cardiovascular:</label>
+                        <input type="number" id="breastCancerPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="breastCancerMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="cardiovascularPercentage">Respiratory:</label>
+                        <input type="number" id="cardiovascularPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="cardiovascularMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <a href="https://docs.google.com/document/d/1AzgT0JD8dfPZLHJ7VQGHHxXcjcS1SmtCAlqZ2w3Gs08/edit" target="_blank">See where your money goes</a>
+
+                </div>
+                <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+                <button type="button" class="next-button" onclick="if(validateStep()) nextStep()">Next</button>
+            </div>
+            <div class="step">
+                <div class="category globalconflict">
+                    <h2>Global Conflict Causes</h2>
+                    <div class="cause">
+                        <label for="palestinePercentage">European Conflict:</label>
+                        <input type="number" id="palestinePercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="palestineMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="palestinePercentage">Asian Conflict:</label>
+                        <input type="number" id="palestinePercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="palestineMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="palestinePercentage">African Conflict:</label>
+                        <input type="number" id="palestinePercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="palestineMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="congoPercentage">South American Conflict:</label>
+                        <input type="number" id="congoPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="congoMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="otherWarPercentage">Other War Affected Areas Percentage:</label>
+                        <input type="number" id="otherWarPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="otherWarMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <a href="https://docs.google.com/document/d/1gK89cG2xfpi9VBmJttKm7kkGb_bRsEgBARQNmCRKXLY/edit" target="_blank">See where your money goes</a>
+
+                </div>
+                <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+                <button type="button" class="next-button" onclick="if(validateStep()) nextStep()">Next</button>
+            </div>
+            <div class="step">
+                <div class="category learning">
+                    <h2>Learning Causes</h2>
+                    <div class="cause">
+                        <label for="roboticsPercentage">Europe:</label>
+                        <input type="number" id="roboticsPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="roboticsMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="roboticsPercentage">Asia:</label>
+                        <input type="number" id="roboticsPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="roboticsMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="roboticsPercentage">North America:</label>
+                        <input type="number" id="roboticsPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="roboticsMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="roboticsPercentage">South American:</label>
+                        <input type="number" id="roboticsPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="roboticsMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+
+                    <div class="cause">
+                        <label for="sportsPercentage">Australia:</label>
+                        <input type="number" id="sportsPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="sportsMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <div class="cause">
+                        <label for="codingPercentage">Africa:</label>
+                        <input type="number" id="codingPercentage" class="percentage-input" placeholder="Enter percentage">
+                        <input type="number" id="codingMoney" class="amount-input" placeholder="Calculated amount">
+                    </div>
+                    <a href="https://docs.google.com/document/d/1rNpa8fUWVbZfE1xU2V_YhHwve7zfrilgEAkn42eEY48/edit" target="_blank">See where your money goes</a>
+
+                </div>
+                <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+                <button type="button" class="next-button" onclick="if(validateStep()) nextStep()">Next</button>
+            </div>
+            <div class="step">
+                <h2>Donation Summary</h2>
+                <div id="summary" class="summary"></div>
+                <button type="button" class="prev-button" onclick="prevStep()">Previous</button>
+                <button type="button" class="donate-button" onclick="generateDonationLink(event)">Donate</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let currentStep = 0;
+    
+        function showStep(step) {
+            const steps = document.getElementsByClassName("step");
+            for (let i = 0; i < steps.length; i++) {
+                steps[i].classList.remove("active");
+            }
+            steps[step].classList.add("active");
+        }
+    
+        function nextStep() {
+            const steps = document.getElementsByClassName("step");
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+    
+        function prevStep() {
+            if (currentStep > 0) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+    
+        function generateSummary() {
+            const totalDonation = parseFloat(document.getElementById('totalDonation').value) || 0;
+            let summary = `Total Donation: $${totalDonation.toFixed(2)}\n\n`;
+    
+            const categories = ['medical', 'globalconflict', 'learning'];
+    
+            categories.forEach(category => {
+                if (!document.getElementById(`checkbox-${category}`).checked) return;
+    
+                const categoryDiv = document.querySelector(`.${category}`);
+                const causes = categoryDiv.querySelectorAll('.cause');
+                summary += `${categoryDiv.querySelector('h2').innerText}\n`;
+    
+                causes.forEach(cause => {
+                    const label = cause.querySelector('label').innerText;
+                    const percentage = parseFloat(cause.querySelector('.percentage-input').value) || 0;
+                    const amount = parseFloat(cause.querySelector('.amount-input').value) || 0;
+                    summary += ` - ${label}: ${percentage}% ($${amount.toFixed(2)})\n`;
+                });
+    
+                summary += '\n';
+            });
+    
+            document.getElementById('summary').innerText = summary;
+            return summary; // Return the generated summary text
+        }
+    
+        function validateStep() {
+            // Add any validation logic here if needed
+            calculateDonationAmounts();
+            generateSummary();
+            return true;
+        }
+    
+        function updateSelectedCategories() {
+            const categories = ['medical', 'globalconflict', 'learning'];
+            categories.forEach(category => {
+                const categoryDiv = document.querySelector(`.${category}`);
+                if (document.getElementById(`checkbox-${category}`).checked) {
+                    categoryDiv.style.display = 'block';
+                } else {
+                    categoryDiv.style.display = 'none';
+                }
+            });
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            showStep(currentStep);
+    
+            document.getElementById('totalDonation').addEventListener('input', calculateDonationAmounts);
+    
+            const percentageInputs = document.querySelectorAll('.category .percentage-input');
+            percentageInputs.forEach(input => {
+                input.addEventListener('input', calculateDonationAmounts);
+            });
+    
+            const amountInputs = document.querySelectorAll('.category .amount-input');
+            amountInputs.forEach(input => {
+                input.addEventListener('input', calculatePercentageFromAmount);
+            });
+    
+            const categoryCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+            categoryCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateSelectedCategories);
+            });
+        });
+    
+        function generateDonationLink(event) {
+            event.preventDefault();
+            const totalDonation = document.getElementById('totalDonation').value;
+            const message = generateSummary(); // Use the generated summary as the message
+            const multipliedAmount = totalDonation * 100; // Multiply donation amount by 100
+    
+            // Constructing the donation link with prefilled values
+            const baseUrl = 'https://hcb.hackclub.com/donations/start/';
+            const amount = multipliedAmount.toFixed(2); // Format the amount to two decimal places
+            const category = 'solace-global'; // Replace with your category or use a dynamic value
+            const encodedMessage = encodeURIComponent(message);
+            const donationLink = `${baseUrl}${category}?message=${encodedMessage}&amount=${amount}`;
+    
+            window.location.href = donationLink;
+        }
+    
+        function calculateDonationAmounts() {
+            const totalDonation = parseFloat(document.getElementById('totalDonation').value) || 0;
+            let totalPercentUsed = 0;
+    
+            // Medical
+            const medicalInputs = document.querySelectorAll('.category.medical .cause');
+            medicalInputs.forEach(input => {
+                const percentage = parseFloat(input.querySelector('.percentage-input').value) || 0;
+                input.querySelector('.amount-input').value = (totalDonation * percentage / 100).toFixed(2);
+                totalPercentUsed += percentage;
+            });
+    
+            // globalconflict
+            const globalconflictInputs = document.querySelectorAll('.category.globalconflict .cause');
+            globalconflictInputs.forEach(input => {
+                const percentage = parseFloat(input.querySelector('.percentage-input').value) || 0;
+                input.querySelector('.amount-input').value = (totalDonation * percentage / 100).toFixed(2);
+                totalPercentUsed += percentage;
+            });
+    
+            // Learning
+            const learningInputs = document.querySelectorAll('.category.learning .cause');
+            learningInputs.forEach(input => {
+                const percentage = parseFloat(input.querySelector('.percentage-input').value) || 0;
+                input.querySelector('.amount-input').value = (totalDonation * percentage / 100).toFixed(2);
+                totalPercentUsed += percentage;
+            });
+    
+            if (totalPercentUsed > 100) {
+                alert("The total percentage cannot exceed 100%. This page has been refreshed");
+                location.reload()
+                return false;
+            }
+        }
+    
+        function calculatePercentageFromAmount(event) {
+            const parentCause = event.target.parentElement;
+            const totalDonation = parseFloat(document.getElementById('totalDonation').value) || 0;
+            const percentageInput = parentCause.querySelector('.percentage-input');
+            const amountInput = parentCause.querySelector('.amount-input');
+            const amount = parseFloat(amountInput.value) || 0;
+    
+            if (totalDonation !== 0) {
+                const percentage = (amount / totalDonation) * 100;
+                percentageInput.value = percentage.toFixed(2);
+            } else {
+                percentageInput.value = 0;
+            }
+        }
+    </script>
+    </body>
 </html>
