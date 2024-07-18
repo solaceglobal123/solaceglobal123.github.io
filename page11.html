@@ -28,7 +28,25 @@
             text-align: center;
             color: #333;
         }
+        .centered-link {
+            text-align: center;
+            margin-top: 10px; /* Optional: adds some space above the link */
+        }
 
+        .centered-link a {
+            font-family: 'Manrope', sans-serif;
+            font-size: 22px; /* Optional: adjusts the font size */
+            font-weight: bold; /* Makes the link text bold */
+            text-decoration: underline; /* Makes the link underlined */
+            text-decoration: none; /* Optional: removes the underline */
+            color: #000000; /* Optional: sets the link color */
+        }
+
+        .centered-link  {
+            text-decoration: underline; /* Optional: underline on hover */
+        }
+
+        
         .total-donation {
             margin-bottom: 20px;
             display: flex;
@@ -150,11 +168,14 @@
     <div class="container">
         <div class="logo-container">
             <a href="http:solaceglobal.xyz">
-                <img src="https://raw.githubusercontent.com/solaceglobal123/solaceglobal123.github.io/8caef5a6b76bbf01673aab2403e5a4d0135c307a/solaceGloballogoTransparent.png" alt="Logo" />
+                <img src="C:\Users\punit\OneDrive\Documents\GitHub\solaceglobal123.github.io\assets\images\solaceGloballogoTransparent.png" alt="Logo" />
             </a>
         </div>
 
         <h1>Donate to Your Preferred Causes</h1>
+        <div class="centered-link">
+            <a href="https://hcb.hackclub.com/donations/start/solace-global">Donate to Solace Global(robotic kits and chess sets)</a>
+        </div>        
         <div class="total-donation">
             <label for="totalDonation">Total Donation Amount:</label>
             <input type="number" id="totalDonation" placeholder="Enter total amount" step="0.01">
