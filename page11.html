@@ -161,18 +161,76 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.menu {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu button:hover {
+    background-color: #b51717;
+}
+#donationSection {
+    display: none;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin: 10px 0;
+}
+
+.logo-container img {
+    max-width: 500px; /* Adjust size as needed */
+    margin-bottom: 30px;
+}
+
 
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="menu">
         <div class="logo-container">
-            <a href="http:solaceglobal.xyz">
-                <img src="https://raw.githubusercontent.com/solaceglobal123/solaceglobal123.github.io/8caef5a6b76bbf01673aab2403e5a4d0135c307a/solaceGloballogoTransparent.png" alt="Logo" />
-            </a>
+            <img src="https://raw.githubusercontent.com/solaceglobal123/solaceglobal123.github.io/8caef5a6b76bbf01673aab2403e5a4d0135c307a/solaceGloballogoTransparent.png" alt="Logo" />
         </div>
+        <div class="button-container">
+            <button onclick="showDonationForm()">Donate to causes (war, education, learning)</button>
+            <button onclick="window.location.href='https://hcb.hackclub.com/donations/start/solace-global'">Donate towards robotics kits and chess boards</button>
+        </div>
+    </div>
+    
+    
 
-        <h1>Donate to Your Preferred Causes</h1>
+    <div id="donationSection">
+        <div class="container">
+            <div class="logo-container">
+                <a href="http://solaceglobal.xyz">
+                    <img src="https://raw.githubusercontent.com/solaceglobal123/solaceglobal123.github.io/8caef5a6b76bbf01673aab2403e5a4d0135c307a/solaceGloballogoTransparent.png" alt="Logo" />
+                </a>
+            </div>
+
+            <h1>Donate to Your Preferred Causes</h1>
+
         <div class="centered-link">
             <a href="https://hcb.hackclub.com/donations/start/solace-global">Donate to Solace Global(robotic kits and chess sets)</a>
         </div>        
@@ -310,6 +368,12 @@
     </div>
 
     <script>
+        function showDonationForm() {
+            document.getElementById('donationSection').style.display = 'block';
+            document.querySelector('.menu').style.display = 'none';
+            document.querySelector('.logo-container').style.display = 'none';
+        }
+
         let currentStep = 0;
     
         function showStep(step) {
